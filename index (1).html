@@ -1,0 +1,2253 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learn to Code for Free by Building Real-World Projects</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1o6fkE9X-q1yGVx2Fsg3fVHmgn3PJOdPA-MJZcZJ-MQ&s">
+    <style>
+        .blue-color {
+            color: #3B51A6;
+        }
+
+        .txtf {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: x-large;
+            font: weight 700px;
+        }
+
+        .imgs img {
+            width: 60px;
+            border-radius: 25;
+            height: 50px;
+
+        }
+
+        .fs {
+            font-size: 50px;
+            font-weight: 500;
+        }
+
+        .fsp {
+            font-size: 20px;
+            color: gray;
+        }
+
+        .colr {
+            background: linear-gradient(to right, #3B51A6, #000080);
+        }
+
+        .img-he img {
+            height: 97%;
+            width: 78%;
+        }
+
+        .tblue {
+            color: #000080;
+        }
+
+        .tgray {
+            color: rgba(255, 255, 255, 0.801);
+        }
+
+        .link-fs {
+            font-size: 18px;
+            color: #000099cd;
+        }
+
+        .fs-p {
+            font-size: 18px;
+        }
+
+        .bg-icons {
+            background-color: rgba(0, 53, 188, 0.127);
+            color: #000080c9;
+        }
+
+        .bg-dark-blue {
+            background-color: #000080c9;
+        }
+
+        .fs-icon {
+            font-size: xx-large;
+        }
+
+        .fs-explore {
+            font-size: large;
+        }
+
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .btn-custom-primary {
+            background-color: #4252a4;
+            color: #fff;
+        }
+
+        .btn-custom-primary:hover {
+            background-color: #334187;
+            color: #fff;
+        }
+
+        .btn-custom-pink {
+            background-color: #e62e5c;
+            color: #fff;
+        }
+
+        .btn-custom-pink:hover {
+            background-color: #c9224b;
+            color: #fff;
+        }
+
+        .border-custom-blue {
+            border: 2px solid #4252a4 !important;
+        }
+
+        .bg-custom-blue {
+            background-color: #4252a4 !important;
+        }
+
+        .text-custom-blue {
+            color: #4252a4 !important;
+        }
+
+        .bg-custom-discount {
+            background-color: #f0f3ff;
+        }
+
+        .custom-carousel {
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .custom-carousel::-webkit-scrollbar {
+            display: none;
+        }
+
+        .fs-h {
+            font-size: 19px;
+        }
+
+        .i-color {
+            color: #63C5DA;
+        }
+
+        .accordion-button {
+            box-shadow: none !important;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: #4058aa;
+            color: white;
+        }
+
+        .accordion-body {
+            background-color: #4058aa;
+            color: white;
+        }
+
+        .accordion-button:not(.collapsed) span {
+            background-color: white !important;
+            color: #4058aa !important;
+        }
+
+        .bg-gray {
+            background-color: rgba(128, 128, 128, 0.049);
+        }
+
+        /* Responsive font size utilities */
+        @media (min-width: 768px) {
+            .fs-md-5 {
+                font-size: 1.125rem !important;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .fs-lg-5 {
+                font-size: 1.25rem !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ================= MOBILE & TABLET NAVBAR ================= -->
+    <nav class="navbar bg-white d-lg-none px-3 py-2">
+        <div class="container-fluid">
+
+            <!-- Hamburger -->
+            <button class="btn border-0 p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+                <i class="fa-solid fa-bars fs-2"></i>
+            </button>
+
+            <!-- Logo -->
+            <a class="navbar-brand m-0" href="#">
+                <img src="https://miro.medium.com/0*i7Zs1A01-IbpKoJG.png" height="50" alt="">
+            </a>
+
+            <!-- Login Button -->
+            <button class="btn btn-dark rounded-pill px-3">
+                <b><i>LOG IN WITH GITHUB</i></b>
+            </button>
+
+        </div>
+    </nav>
+
+    <!-- ================= MOBILE OFFCANVAS ================= -->
+    <div class="offcanvas offcanvas-start w-100" tabindex="-1" id="mobileMenu">
+
+        <div class="offcanvas-header border-bottom">
+
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas">
+            </button>
+
+        </div>
+
+        <div class="offcanvas-body p-0">
+
+            <div class="accordion accordion-flush" id="mobileAccordion">
+
+                <!-- EXPLORE -->
+
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button collapsed fw-bold fst-italic" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#exploreMenu">
+
+                            EXPLORE
+
+                        </button>
+
+                    </h2>
+
+                    <div id="exploreMenu" class="accordion-collapse collapse">
+
+                        <div class="list-group list-group-flush">
+
+                            <a href="#" class="list-group-item py-4">
+                                <i class="fa-solid fa-route me-3"></i>
+                                LEARNING PATHS
+                            </a>
+
+                            <a href="#" class="list-group-item py-4">
+                                <i class="fa-solid fa-laptop me-3"></i>
+                                CHALLENGES
+                            </a>
+
+                            <a href="#" class="list-group-item py-4">
+                                <i class="fa-solid fa-code me-3"></i>
+                                SOLUTIONS
+                            </a>
+
+                            <a href="#" class="list-group-item py-4">
+                                <i class="fa-regular fa-newspaper me-3"></i>
+                                ARTICLES
+                            </a>
+
+                            <a href="#" class="list-group-item py-4">
+                                <i class="fa-solid fa-book me-3"></i>
+                                GUIDES
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- FOR COMPANIES -->
+
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button collapsed fw-bold fst-italic" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#companyMenu">
+
+                            FOR COMPANIES
+
+                        </button>
+
+                    </h2>
+
+                    <div id="companyMenu" class="accordion-collapse collapse">
+
+                        <div class="list-group list-group-flush">
+
+                            <a href="#" class="list-group-item py-4">
+                                HIRE DEVELOPERS
+                            </a>
+
+                            <a href="#" class="list-group-item py-4">
+                                TRAIN DEVELOPERS
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- UNLOCK PRO -->
+
+                <div class="border-top px-3 py-4 fw-bold fst-italic">
+
+                    <i class="fa-solid fa-lock me-2"></i>
+
+                    UNLOCK
+
+                    <span class="badge bg-dark-blue">
+                        PRO
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ================= DESKTOP NAVBAR ================= -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary d-none d-lg-flex">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#">
+                <img src="https://miro.medium.com/0*i7Zs1A01-IbpKoJG.png" alt="" height="75">
+            </a>
+
+            <div class="collapse navbar-collapse d-flex justify-content-end">
+
+                <ul class="navbar-nav align-items-center">
+
+                    <li class="nav-item dropdown">
+
+                        <button class="btn dropdown-toggle" data-bs-toggle="dropdown">
+
+                            <b><i>EXPLORE</i></b>
+
+                        </button>
+
+                        <ul class="dropdown-menu">
+
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-route"></i> LEARNING PATHS</a>
+                            </li>
+                            <li>
+                                <hr>
+                            </li>
+
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-laptop"></i> CHALLENGES</a></li>
+                            <li>
+                                <hr>
+                            </li>
+
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-code"></i> SOLUTIONS</a></li>
+                            <li>
+                                <hr>
+                            </li>
+
+                            <li><a class="dropdown-item" href="#"><i class="fa-regular fa-newspaper"></i> ARTICLES</a>
+                            </li>
+                            <li>
+                                <hr>
+                            </li>
+
+                            <li><a class="dropdown-item" href="#"><i class="fa-solid fa-book"></i> GUIDES</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="nav-item dropdown">
+
+                        <button class="btn dropdown-toggle" data-bs-toggle="dropdown">
+
+                            <b><i>FOR COMPANIES</i></b>
+
+                        </button>
+
+                        <ul class="dropdown-menu">
+
+                            <li><a class="dropdown-item" href="#">HIRE DEVELOPERS</a></li>
+                            <li>
+                                <hr>
+                            </li>
+
+                            <li><a class="dropdown-item" href="#">TRAIN DEVELOPERS</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="nav-item px-3">
+
+                        <b><i>UNLOCK</i></b>
+
+                        <span class="badge bg-dark-blue">
+                            PRO
+                        </span>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <button class="btn btn-dark rounded-pill px-4">
+
+                            <b><i>LOG IN WITH GITHUB</i></b>
+
+                            <i class="fa-brands fa-github ms-2"></i>
+
+                        </button>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+    <div class="m-5">
+
+        <div class="container">
+
+            <div class="mb-3 w-100">
+
+                <div class="row g-0">
+
+                    <!-- MATTER -->
+                    <!-- Mobile: 2nd | Desktop: 1st -->
+                    <div class="col-md-6 p-4 order-md-1">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title fw-bold">
+                                <i>FOR LEARNERS</i>
+                            </h5>
+
+                            <br>
+
+                            <h1 class="blue-color fs">
+                                Learn to code for free by building real-world projects
+                            </h1>
+
+                            <br>
+
+                            <p class="card-text fsp">
+                                Build real projects to professional designs and briefs, get AI code
+                                reviews that build a profile of your strengths, and grow alongside a
+                                community reviewing each other's code. Join
+                                <span class="blue-color"><b>1,190,464</b></span>
+                                developers building the skills and judgment that get them hired.
+                            </p>
+
+                        </div>
+
+                        <br>
+
+                        <div class="row g-2">
+
+                            <div class="col-6">
+
+                                <button type="button" class="btn btn-danger w-100 p-3 rounded-5">
+
+                                    <a href="https://github.com/" class="text-decoration-none text-white">
+
+                                        <b><i>START BUILDING FREE</i></b>
+
+                                    </a>
+
+                                    <i class="fa-brands fa-github"></i>
+
+                                </button>
+
+                            </div>
+
+                            <div class="col-6">
+
+                                <button type="button" class="btn p-3 border w-100 rounded-5">
+
+                                    <b><i>BROWSE CHALLENGES</i></b>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- IMAGE -->
+                    <!-- Mobile: 1st | Desktop: 2nd -->
+                    <div class="col-md-6 img-he order-md-2">
+
+                        <img src="https://www.frontendmentor.io/_next/image?url=%2Fimages%2Fhome-hero.webp&w=3840&q=100"
+                            class="img-fluid rounded-start" alt="image">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="container">
+
+            <div class="card border-0 rounded-4 p-2 colr text-white">
+
+                <div class="row align-items-center px-4">
+
+                    <div class="col-md-10">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title fw-bold">
+                                Get an AI code review on every solution you submit
+                            </h5>
+
+                            <p class="card-text tgray">
+                                Free members get one review a month. Go Pro for a review on every
+                                submission and a skills profile that fills out as fast as you build.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-2 text-center">
+
+                        <button type="button"
+                            class="btn btn-light text-decoration-none p-2 px-3 rounded-5 tblue fw-semibold">
+
+                            <i>LEARN ABOUT PRO</i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <!-- Fixed: changed md-sm-3 to mb-md-3 -->
+            <div class="col-sm-12 col-md-6 mb-3 mb-md-0">
+                <div class="card">
+                    <div class="card-body">
+                        <div>
+                            <p class="card-text txtf">"I highly recommend Frontend Mentor. Skip the search for project
+                                ideas and dive
+                                into ready-made challenges that help you level up as a developer."
+                            </p>
+                        </div>
+                        <div class="imgs d-flex mt-5">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFz4KFpcmWpaAT8KWYoXwe4cTOdHP9zLgKrzRdU6jTSw&s=10"
+                                alt="">
+                            <div>
+                                <h5 class="card-title blue-color">Kevin Powell</h5>
+                                <p>Web Developer & YouTuber</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text txtf"> "Frontend Mentor is a win-win. You can sharpen your skills building
+                            websites
+                            and add finished projects to your portfolio to help land a job!"</p>
+                        <div class="imgs d-flex mt-5">
+                            <img src="https://img.magnific.com/free-photo/businesswoman-with-glasses-crossed-arms_1098-3347.jpg?semt=ais_hybrid&w=740&q=80"
+                                alt="">
+                            <div>
+                                <h5 class="card-title blue-color">Jessica Chan </h5>
+                                <p>Web Developer & YouTuber</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h4 class="fw-semibold text-center my-4">AS FEATURED ON...</h4>
+
+        <div class="row justify-content-center g-4">
+            <div class="col-md-4">
+                <div class="card rounded-4 p-4">
+                    <img src="https://www.frontendmentor.io/images/logo-css-tricks.svg" class="d-block mx-auto"
+                        style="height: 40px; width: 190px;" alt="CSS Tricks">
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card rounded-4 p-4">
+                    <img src="https://www.frontendmentor.io/images/logo-stack-overflow.svg" class="d-block mx-auto"
+                        style="height: 40px; width: 190px;" alt="Stack Overflow">
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card rounded-4 p-4">
+                    <img src="https://www.frontendmentor.io/images/logo-product-hunt.svg" class="d-block mx-auto"
+                        style="height: 40px; width: 190px;" alt="Product Hunt">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- HOW IT WORKS -->
+
+    <div class="container p-5 rounded-4 bg-gray">
+
+        <h4 class="display-5 mb-5 fw-semibold">
+            How it works
+        </h4>
+
+        <div class="row g-5">
+
+            <!-- ACCORDION -->
+            <!-- Mobile: 2nd | Desktop: 1st -->
+            <div class="col-lg-6 order-2 order-lg-1">
+
+                <div class="accordion" id="howItWorks">
+
+                    <!-- STEP 1 -->
+
+                    <div class="accordion-item mb-4 rounded-4 overflow-hidden">
+
+                        <h2 class="accordion-header">
+
+                            <button class="accordion-button fw-bold fs-5" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#step1"
+                                data-image="https://www.frontendmentor.io/_next/image?url=%2Fimages%2Fhome-how-it-works-1.webp&w=3840&q=100">
+
+                                <span
+                                    class="bg-info text-white rounded-circle d-flex justify-content-center align-items-center me-4"
+                                    style="width:50px;height:50px;">
+
+                                    <i>1</i>
+
+                                </span>
+
+                                Choose your challenge
+
+                            </button>
+
+                        </h2>
+
+                        <div id="step1" class="accordion-collapse collapse show" data-bs-parent="#howItWorks">
+
+                            <div class="accordion-body fs-5">
+
+                                Pick from 120+ professional projects across five
+                                difficulty levels. Build to a design file, or take
+                                on a product challenge and make the design
+                                decisions yourself.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- STEP 2 -->
+
+                    <div class="accordion-item mb-4 rounded-4 overflow-hidden">
+
+                        <h2 class="accordion-header">
+
+                            <button class="accordion-button collapsed fw-bold fs-5" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#step2"
+                                data-image="https://www.frontendmentor.io/_next/image?url=%2Fimages%2Fhome-how-it-works-2.webp&w=3840&q=100">
+
+                                <span
+                                    class="bg-info text-white rounded-circle d-flex justify-content-center align-items-center me-4"
+                                    style="width:50px;height:50px;">
+
+                                    <i>2</i>
+
+                                </span>
+
+                                Build it your way
+
+                            </button>
+
+                        </h2>
+
+                        <div id="step2" class="accordion-collapse collapse" data-bs-parent="#howItWorks">
+
+                            <div class="accordion-body fs-5">
+
+                                Build with any stack you like. Hand-code the early levels
+                                to lock in your fundamentals, then practice directing AI
+                                on advanced and full-stack builds, the way real teams work
+                                today.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- STEP 3 -->
+
+                    <div class="accordion-item mb-4 rounded-4 overflow-hidden">
+
+                        <h2 class="accordion-header">
+
+                            <button class="accordion-button collapsed fw-bold fs-5" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#step3"
+                                data-image="https://www.frontendmentor.io/_next/image?url=%2Fimages%2Fhome-how-it-works-3.webp&w=3840&q=100">
+
+                                <span
+                                    class="bg-info text-white rounded-circle d-flex justify-content-center align-items-center me-4"
+                                    style="width:50px;height:50px;">
+
+                                    <i>3</i>
+
+                                </span>
+
+                                Submit and improve
+
+                            </button>
+
+                        </h2>
+
+                        <div id="step3" class="accordion-collapse collapse" data-bs-parent="#howItWorks">
+
+                            <div class="accordion-body fs-5">
+
+                                Get an AI code review with line-level findings scored
+                                against the brief's requirements. Every review adds
+                                to your skills profile, so you can watch your strengths
+                                build. Then learn from the community reviewing your code.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- STEP 4 -->
+
+                    <div class="accordion-item mb-4 rounded-4 overflow-hidden">
+
+                        <h2 class="accordion-header">
+
+                            <button class="accordion-button collapsed fw-bold fs-5" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#step4"
+                                data-image="https://www.frontendmentor.io/_next/image?url=%2Fimages%2Fhome-how-it-works-4.webp&w=3840&q=100">
+
+                                <span
+                                    class="bg-info text-white rounded-circle d-flex justify-content-center align-items-center me-4"
+                                    style="width:50px;height:50px;">
+
+                                    <i>4</i>
+
+                                </span>
+
+                                Level up as you go
+
+                            </button>
+
+                        </h2>
+
+                        <div id="step4" class="accordion-collapse collapse" data-bs-parent="#howItWorks">
+
+                            <div class="accordion-body fs-5">
+
+                                Take on tougher challenges as you grow, and review
+                                other developers' code along the way to sharpen your
+                                skills and build connections in a supportive community.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGE -->
+            <!-- Mobile: 1st | Desktop: 2nd -->
+            <div class="col-lg-6 order-1 order-lg-2">
+
+                <div class="rounded-4 p-4 h-100 d-flex align-items-center">
+
+                    <img id="howImage"
+                        src="https://www.frontendmentor.io/_next/image?url=%2Fimages%2Fhome-how-it-works-1.webp&w=3840&q=100"
+                        class="img-fluid rounded-3" alt="How it works">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- WHY DEVELOPERS CHOOSE FRONTEND MENTOR -->
+
+    <div class="container py-5">
+
+        <div class="text-center">
+
+            <h1>Why developers choose</h1>
+
+            <h1>Frontend Mentor</h1>
+
+        </div>
+
+
+        <!-- ROW 1 -->
+
+        <div class="row pt-5 d-flex justify-content-center align-items-center">
+
+            <!-- MATTER -->
+            <!-- Mobile: 2nd | Desktop: 1st -->
+            <div class="col-md-6 p-5 align-items-center order-2 order-md-1">
+
+                <h3>
+                    Move beyond passive learning
+                </h3>
+
+                <p class="fs-5 text-secondary pt-4">
+
+                    Stop watching tutorials and start building.
+                    Create professional projects that build real skills
+                    through hands-on practice.
+
+                </p>
+
+            </div>
+
+
+            <!-- IMAGE -->
+            <!-- Mobile: 1st | Desktop: 2nd -->
+            <div class="col-md-6 p-4 order-1 order-md-2">
+
+                <img src="https://www.frontendmentor.io/_next/image?url=%2Fimages%2Fhome-why-1.webp&w=3840&q=75"
+                    class="w-100" alt="image">
+
+            </div>
+
+        </div>
+
+
+        <!-- ROW 2 -->
+
+        <div class="row pt-5 d-flex justify-content-center align-items-center">
+
+            <!-- IMAGE -->
+            <div class="col-md-6 p-4 order-1">
+
+                <img src="https://www.frontendmentor.io/_next/image?url=%2Fimages%2Fhome-why-2.webp&w=3840&q=75"
+                    class="w-100" alt="image">
+
+            </div>
+
+
+            <!-- MATTER -->
+            <div class="col-md-6 p-5 align-items-center order-2">
+
+                <h3>
+                    Create a portfolio that gets you hired
+                </h3>
+
+                <p class="fs-5 text-secondary pt-4">
+
+                    Build standout projects to professional designs and
+                    briefs, and you'll have work that proves you can ship
+                    production-ready code. Recruiters tell us these pieces
+                    "wow" them in interviews.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ROW 3 -->
+
+        <div class="row pt-5 d-flex justify-content-center align-items-center">
+
+            <!-- MATTER -->
+            <!-- Mobile: 2nd | Desktop: 1st -->
+            <div class="col-md-6 p-5 align-items-center order-2 order-md-1">
+
+                <h3>
+                    Learn to work effectively with AI from day one
+                </h3>
+
+                <p class="fs-5 text-secondary pt-4">
+
+                    AI is part of how real teams build now, so practice with
+                    it from day one: ask it questions, debug with it, use it
+                    to review your code. The skill that matters most is
+                    judgment, knowing whether the output is good enough to
+                    ship, and that comes from doing the work yourself.
+
+                </p>
+
+                <a href="#" class="link-fs pt-4 d-block fw-medium">
+
+                    Read our take on learning to code with AI
+
+                </a>
+
+            </div>
+
+
+            <!-- IMAGE -->
+            <!-- Mobile: 1st | Desktop: 2nd -->
+            <div class="col-md-6 p-4 order-1 order-md-2">
+
+                <img src="https://www.frontendmentor.io/_next/image?url=%2Fimages%2Fhome-why-3.webp&w=3840&q=75"
+                    class="w-100" alt="image">
+
+            </div>
+
+        </div>
+
+
+        <!-- ROW 4 -->
+
+        <div class="row pt-5 d-flex justify-content-center align-items-center">
+
+            <!-- IMAGE -->
+            <div class="col-md-6 p-4 order-1">
+
+                <img src="https://www.frontendmentor.io/_next/image?url=%2Fimages%2Fhome-why-4.webp&w=3840&q=75"
+                    class="w-100" alt="image">
+
+            </div>
+
+
+            <!-- MATTER -->
+            <div class="col-md-6 p-5 align-items-center order-2">
+
+                <h3>
+                    Join a supportive developer community
+                </h3>
+
+                <p class="fs-5 text-secondary pt-4">
+
+                    Connect with other developers for code reviews,
+                    career advice, and encouragement. You'll build alongside
+                    people who get what you're working through, with help
+                    from those a few steps ahead.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRO SECTION -->
+
+    <div class="container text-center py-5">
+
+        <h1 class="d-none d-md-block">
+            Fast-track your developer <br>
+            career with
+            <span class="bg-dark-blue rounded-3 text-white" style="padding: 3px;">
+                PRO
+            </span>
+        </h1>
+
+        <!-- Heading for devices below md -->
+        <h1 class="d-md-none text-nowrap">
+            Fast-track your developer career with
+            <span class="bg-dark-blue rounded-3 text-white" style="padding: 3px;">
+                PRO
+            </span>
+        </h1>
+
+        <p class="text-secondary fs-5 pt-4 pb-3">
+            Go Pro for an AI code review on every solution, premium projects
+            across design and product challenges, and professional design files.
+            Everything you need to keep leveling up.
+        </p>
+
+
+        <!-- CARDS -->
+
+        <div class="row pt-5 g-4 justify-content-center">
+
+            <!-- CARD 1 -->
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="card p-2 rounded-4 h-100">
+
+                    <div class="card-body">
+
+                        <div class="pb-3 pt-1">
+
+                            <div class="bg-icons rounded-3 d-flex justify-content-center align-items-center"
+                                style="width: 70px; height: 70px;">
+
+                                <i class="fa-regular fa-comment fs-icon"></i>
+
+                            </div>
+
+                        </div>
+
+                        <div class="text-start">
+
+                            <h4 class="card-title">
+                                Get an AI code review on every solution
+                            </h4>
+
+                            <p class="card-text fs-p text-secondary pt-3">
+
+                                Submit your work and get line-level findings
+                                scored against the brief's requirements,
+                                from code quality and accessibility to your
+                                commits and README. Free members get one review
+                                a month; Pro gives you one on every submission.
+                                Every review builds your skills profile.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 2 -->
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="card p-2 rounded-4 h-100">
+
+                    <div class="card-body">
+
+                        <div class="pb-3 pt-1">
+
+                            <div class="bg-icons rounded-3 d-flex justify-content-center align-items-center"
+                                style="width: 70px; height: 70px;">
+
+                                <i class="fa-solid fa-briefcase fs-icon"></i>
+
+                            </div>
+
+                        </div>
+
+                        <div class="text-start">
+
+                            <h4 class="card-title">
+                                Build portfolio projects that get you hired
+                            </h4>
+
+                            <p class="card-text fs-p text-secondary pt-3">
+
+                                Work on premium challenges that mirror real
+                                client work, from multi-page sites and dashboards
+                                to full-stack apps. Build to a design file, or
+                                take on a product challenge and make the design
+                                decisions yourself.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 3 -->
+
+            <div class="col-12 col-md-6 col-lg-4">
+
+                <div class="card p-2 rounded-4 h-100">
+
+                    <div class="card-body">
+
+                        <div class="pb-3 pt-1">
+
+                            <div class="bg-icons rounded-3 d-flex justify-content-center align-items-center"
+                                style="width: 70px; height: 70px;">
+
+                                <i class="fa-solid fa-code fs-icon"></i>
+
+                            </div>
+
+                        </div>
+
+                        <div class="text-start">
+
+                            <h4 class="card-title">
+                                Practice the design-to-code workflow
+                            </h4>
+
+                            <p class="card-text fs-p text-secondary pt-3">
+
+                                Get professional design files for every design
+                                challenge and build to real specs: colors,
+                                spacing, type, and more. It's the same workflow
+                                developers use on the job.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRICING -->
+
+    <div class="container my-4">
+
+        <!-- Top Toggle Switch -->
+
+        <div class="d-flex justify-content-center mb-5">
+
+            <div class="bg-white rounded-pill p-1 shadow-sm border d-inline-flex">
+
+                <button id="btn-individuals"
+                    class="btn btn-custom-primary rounded-pill px-4 py-2 fw-bold text-uppercase fst-italic"
+                    onclick="showTab('individuals')">
+
+                    For Individuals
+
+                </button>
+
+                <button id="btn-teams"
+                    class="btn btn-light text-dark rounded-pill px-4 py-2 fw-bold text-uppercase fst-italic border-0"
+                    onclick="showTab('teams')">
+
+                    For Teams
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- INDIVIDUALS TAB -->
+
+        <div id="individuals-tab" class="row g-4 justify-content-center">
+
+            <!-- Monthly Card -->
+
+            <div class="col-12 col-md-6 col-lg-5">
+
+                <div class="card h-100 rounded-4 border-0 shadow-sm p-4">
+
+                    <div class="text-center mb-5">
+
+                        <h5 class="fw-normal text-muted mb-3">
+                            Monthly
+                        </h5>
+
+                        <h2 class="display-6 fw-semibold mb-1">
+                            ₹625<span class="fs-5 fw-semibold">/mo</span>
+                        </h2>
+
+                        <small class="text-muted">
+                            Billed monthly
+                        </small>
+
+                    </div>
+
+
+                    <button class="btn btn-custom-pink rounded-pill py-2 fw-bold text-uppercase fst-italic w-100 mb-4">
+
+                        Learn More
+
+                    </button>
+
+
+                    <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+
+                        <li class="d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-custom-blue"></i>
+                            <span>Free challenges</span>
+                        </li>
+
+                        <li class="d-flex align-items-center gap-2 fw-bold">
+                            <i class="fa-solid fa-circle-check text-custom-blue"></i>
+                            <span>AI code review on every solution</span>
+                        </li>
+
+                        <li class="d-flex align-items-center gap-2 fw-bold">
+                            <i class="fa-solid fa-circle-check text-custom-blue"></i>
+                            <span>5 Figma design files/month</span>
+                        </li>
+
+                        <li class="d-flex align-items-center gap-2 fw-bold">
+                            <i class="fa-solid fa-circle-check text-custom-blue"></i>
+                            <span>2 premium challenges/month</span>
+                        </li>
+
+                        <li class="d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-custom-blue"></i>
+                            <span>Private solutions</span>
+                        </li>
+
+                        <li class="d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-custom-blue"></i>
+                            <span>Custom solution domains</span>
+                        </li>
+
+                        <li class="d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-circle-check text-custom-blue"></i>
+                            <span>View challenge solutions early</span>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+            <!-- Yearly Card -->
+
+            <div class="col-12 col-md-6 col-lg-5">
+
+                <div class="card h-100 rounded-4 border-custom-blue shadow-sm overflow-hidden position-relative">
+
+                    <div class="bg-custom-blue text-white text-center py-1 fw-bold text-uppercase small"
+                        style="letter-spacing: 1px;">
+
+                        Best Value
+
+                    </div>
+
+
+                    <div class="p-4">
+
+                        <div class="text-center mb-3">
+
+                            <h5 class="fw-normal text-muted mb-2">
+                                Yearly
+                            </h5>
+
+                            <div class="text-muted text-decoration-line-through small fw-bold">
+                                ₹416.67 /month
+                            </div>
+
+                            <h2 class="display-6 fw-semibold mb-1">
+                                ₹291.67<span class="fs-5 fw-semibold">/mo</span>
+                            </h2>
+
+                            <small class="text-muted d-block mb-3">
+                                ₹3,500 billed yearly (save 53% vs monthly)
+                            </small>
+
+
+                            <!-- Sale Banner -->
+
+                            <div class="bg-custom-discount border rounded-3 p-2 text-start small">
+
+                                <div class="d-flex align-items-center gap-2 fw-bold text-custom-blue mb-1">
+
+                                    <i class="fa-solid fa-graduation-cap fs-5"></i>
+
+                                    <span>
+                                        Back to School Sale 2026
+                                    </span>
+
+                                    <span class="text-custom-blue ms-auto">
+                                        30% off
+                                    </span>
+
+                                </div>
+
+
+                                <div class="d-flex align-items-center gap-2">
+
+                                    <span class="badge bg-success-subtle text-success border border-success-subtle">
+
+                                        Applied
+
+                                    </span>
+
+                                    <span class="text-muted" style="font-size: 0.75rem;">
+
+                                        Expires in 11 days
+
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <button
+                            class="btn btn-custom-pink rounded-pill py-2 fw-bold text-uppercase fst-italic w-100 mb-4">
+
+                            Learn More
+
+                        </button>
+
+
+                        <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+
+                            <li class="d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-custom-blue"></i>
+                                <span>Free challenges</span>
+                            </li>
+
+                            <li class="d-flex align-items-center gap-2 fw-bold">
+                                <i class="fa-solid fa-circle-check text-custom-blue"></i>
+                                <span>AI code review on every solution</span>
+                            </li>
+
+                            <li class="d-flex align-items-center gap-2 fw-bold">
+                                <i class="fa-solid fa-circle-check text-custom-blue"></i>
+                                <span>Unlimited Figma design files</span>
+                            </li>
+
+                            <li class="d-flex align-items-center gap-2 fw-bold">
+                                <i class="fa-solid fa-circle-check text-custom-blue"></i>
+                                <span>Unlimited premium challenges</span>
+                            </li>
+
+                            <li class="d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-custom-blue"></i>
+                                <span>Private solutions</span>
+                            </li>
+
+                            <li class="d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-custom-blue"></i>
+                                <span>Custom solution domains</span>
+                            </li>
+
+                            <li class="d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-circle-check text-custom-blue"></i>
+                                <span>View challenge solutions early</span>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- TEAMS TAB -->
+
+        <div id="teams-tab" class="row justify-content-center d-none">
+
+            <div class="col-12 col-lg-10">
+
+                <div class="card rounded-4 border-0 shadow-sm p-4 p-md-5">
+
+                    <div class="row align-items-center g-4">
+
+                        <!-- LEFT SIDE -->
+
+                        <div class="col-12 col-md-6 pe-md-4">
+
+                            <h2 class="fw-bold fs-3 mb-4">
+                                Frontend Mentor for Teams
+                            </h2>
+
+                            <p class="text-secondary lh-base mb-5">
+
+                                Onboard new hires faster and train team members
+                                more effectively through hands-on practice.
+                                All team members gain unlimited Pro access,
+                                and admins can easily oversee and manage the team.
+
+                            </p>
+
+                            <button
+                                class="btn btn-custom-pink rounded-pill py-2 px-5 fw-bold text-uppercase fst-italic w-100">
+
+                                Learn More
+
+                            </button>
+
+                        </div>
+
+
+                        <!-- RIGHT SIDE -->
+
+                        <div class="col-12 col-md-6 ps-md-4 border-start-md">
+
+                            <div class="mb-4">
+
+                                <h5 class="fw-normal mb-2">
+                                    Teams
+                                </h5>
+
+                                <h4 class="display-6 fw-semibold mb-1">
+
+                                    ₹520.83<span class="fs-5 fw-semibold">
+                                        /seat/mo
+                                    </span>
+
+                                </h4>
+
+                                <small class="text-muted">
+                                    ₹6,250 per seat, billed yearly
+                                </small>
+
+                            </div>
+
+
+                            <hr class="my-4 text-muted opacity-25">
+
+
+                            <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+
+                                <li class="d-flex align-items-center gap-2">
+
+                                    <i class="fa-solid fa-circle-check text-custom-blue fs-5"></i>
+
+                                    <span>
+                                        Unlimited Pro access for team members
+                                    </span>
+
+                                </li>
+
+                                <li class="d-flex align-items-center gap-2">
+
+                                    <i class="fa-solid fa-circle-check text-custom-blue fs-5"></i>
+
+                                    <span>
+                                        Unified billing
+                                    </span>
+
+                                </li>
+
+                                <li class="d-flex align-items-center gap-2">
+
+                                    <i class="fa-solid fa-circle-check text-custom-blue fs-5"></i>
+
+                                    <span>
+                                        Team management
+                                    </span>
+
+                                </li>
+
+                                <li class="d-flex align-items-center gap-2">
+
+                                    <i class="fa-solid fa-circle-check text-custom-blue fs-5"></i>
+
+                                    <span>
+                                        Team branding
+                                    </span>
+
+                                </li>
+
+                                <li class="d-flex align-items-center gap-2">
+
+                                    <i class="fa-solid fa-circle-check text-custom-blue fs-5"></i>
+
+                                    <span>
+                                        Bulk discount
+                                    </span>
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PAYMENT METHODS -->
+
+    <div class="container d-flex justify-content-center my-5">
+
+        <div class="card px-2 py-3 d-inline-block">
+
+            <div class="card-body d-flex">
+
+                <img src="https://www.frontendmentor.io/_next/image?url=%2Fimages%2Fvisa.png&w=128&q=75"
+                    style="height: 40px;" class="me-2" alt="">
+
+                <img src="https://www.frontendmentor.io/_next/image?url=%2Fimages%2Fmastercard.png&w=128&q=75"
+                    style="height: 40px;" class="me-2" alt="">
+
+                <img src="https://www.frontendmentor.io/_next/image?url=%2Fimages%2Famex.png&w=128&q=75"
+                    style="height: 40px;" class="me-2" alt="">
+
+                <img src="https://www.frontendmentor.io/_next/image?url=%2Fimages%2Fmaestro.png&w=128&q=75"
+                    style="height: 40px;" class="me-2" alt="">
+
+                <img src="https://www.frontendmentor.io/_next/image?url=%2Fimages%2Fpaypal.png&w=128&q=75"
+                    style="height: 40px;" class="me-2" alt="">
+
+                <img src="https://www.frontendmentor.io/_next/image?url=%2Fimages%2Fgpay.png&w=128&q=75"
+                    style="height: 40px;" alt="">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOR COMPANIES -->
+
+    <div class="container py-5 mt-5">
+
+        <div class="text-center">
+            <h3>For companies</h3>
+        </div>
+
+
+        <!-- ROW 1 -->
+        <!-- Mobile: IMAGE first, MATTER second -->
+        <!-- Desktop: MATTER first, IMAGE second -->
+
+        <div class="row pt-5 d-flex justify-content-center align-items-center">
+
+            <!-- MATTER -->
+
+            <div class="col-md-6 p-5 align-items-center order-2 order-md-1">
+
+                <h5 class="pb-3 blue-color fw-bold">
+                    <i>ENGINEERING TEAMS</i>
+                </h5>
+
+                <h1>
+                    Train junior developers with real projects
+                </h1>
+
+                <p class="fs-5 text-secondary pt-4">
+
+                    Skip theoretical tutorials. Give your junior developers
+                    120+ real-world challenges that build practical skills.
+                    Get an AI code review on every developer's submission
+                    to identify skill gaps and track their progress.
+
+                </p>
+
+                <button type="button" class="btn btn-danger p-2 fw-bold fs-explore px-5 rounded-5">
+
+                    <i>EXPLORE TEAMS</i>
+
+                </button>
+
+            </div>
+
+
+            <!-- IMAGE -->
+
+            <div class="col-md-6 p-4 order-1 order-md-2">
+
+                <img src="https://www.frontendmentor.io/_next/image?url=%2Fimages%2Fhome-teams.webp&w=3840&q=75"
+                    class="w-100" alt="image">
+
+            </div>
+
+        </div>
+
+
+        <!-- ROW 2 -->
+        <!-- Mobile: IMAGE first, MATTER second -->
+        <!-- Desktop: IMAGE first, MATTER second -->
+
+        <div class="row pt-5 d-flex justify-content-center align-items-center">
+
+            <!-- IMAGE -->
+
+            <div class="col-md-6 p-4 order-1">
+
+                <img src="https://www.frontendmentor.io/_next/image?url=%2Fimages%2Fhome-hiring.webp&w=3840&q=75"
+                    class="w-100" alt="image">
+
+            </div>
+
+
+            <!-- MATTER -->
+
+            <div class="col-md-6 p-5 align-items-center order-2">
+
+                <h5 class="pb-3 blue-color fw-bold">
+                    <i>HIRING TEAMS</i>
+                </h5>
+
+                <h1>
+                    Discover junior talent through skills, not resumes
+                </h1>
+
+                <p class="fs-5 text-secondary pt-4">
+
+                    See real code and live projects upfront, then connect
+                    directly with developers who've demonstrated the skills
+                    and passion you need.
+
+                </p>
+
+                <button type="button" class="btn btn-danger p-2 fw-bold fs-explore px-5 rounded-5">
+
+                    <i>EXPLORE HIRING</i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- COMMUNITY TESTIMONIALS -->
+
+    <div class="container bg-gray p-3 p-md-5 rounded-4">
+
+        <!-- Header -->
+        <div class="d-flex flex-wrap justify-content-between align-items-center mb-4">
+            <h1 class="fw-semibold m-0 py-3 py-md-5 display-6 display-md-5 display-lg-4">
+                A little ❤️ from our community
+            </h1>
+            <div class="d-flex gap-2">
+                <button id="prevBtn"
+                    class="btn btn-secondary rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 44px; height: 44px;" aria-label="Previous">
+                    <i class="fa-solid fa-arrow-left-long"></i>
+                </button>
+                <button id="nextBtn"
+                    class="btn btn-primary rounded-circle d-flex align-items-center justify-content-center"
+                    style="width: 44px; height: 44px;" aria-label="Next">
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Scrollable Cards -->
+        <div id="carouselContainer" class="d-flex gap-3 gap-md-4 overflow-x-auto pb-3 custom-carousel">
+
+            <!-- CARD 1 -->
+            <div class="card border-0 shadow-sm p-3 p-md-4 rounded-4 flex-shrink-0 d-flex flex-column"
+                style="min-width: 300px; max-width: 340px; min-height: 320px; max-height: 420px; width: 100%;">
+
+                <p class="text-secondary mb-3 mb-md-4 fs-6 fs-md-5">
+                    This platform provides everything developers need to
+                    improve their skills. The community is great, and the
+                    challenges keep me motivated, instill accountability
+                    through regular submissions, and allow me to build a
+                    professional portfolio by showcasing diverse projects.
+                </p>
+
+                <div class="d-flex align-items-center gap-3 mt-auto">
+                    <img src="https://i.pravatar.cc/100?img=1" alt="Francesca" class="rounded-circle"
+                        style="width: 40px; height: 40px;">
+                    <div>
+                        <h6 class="fw-bold mb-0 blue-color fs-6 fs-md-5">
+                            Francesca
+                        </h6>
+                        <small class="text-muted">@frrann</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="card border-0 shadow-sm p-3 p-md-4 rounded-4 flex-shrink-0 d-flex flex-column"
+                style="min-width: 300px; max-width: 340px; min-height: 320px; max-height: 420px; width: 100%;">
+
+                <p class="text-secondary mb-3 mb-md-4 fs-6 fs-md-5">
+                    Frontend Mentor eliminated the hurdle of sourcing
+                    designs, letting me focus on development. Their
+                    professional projects, especially in the Pro subscription,
+                    challenge me to create complex, multi-page websites.
+                    With a supportive community and feedback from advanced
+                    programmers, my skills have been elevated to new heights.
+                </p>
+
+                <div class="d-flex align-items-center gap-3 mt-auto">
+                    <img src="https://i.pravatar.cc/100?img=12" alt="Alfie" class="rounded-circle"
+                        style="width: 40px; height: 40px;">
+                    <div>
+                        <h6 class="fw-bold mb-0 blue-color fs-6 fs-md-5">
+                            Alfie
+                        </h6>
+                        <small class="text-muted">@alfiemitchell123</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="card border-0 shadow-sm p-3 p-md-4 rounded-4 flex-shrink-0 d-flex flex-column"
+                style="min-width: 300px; max-width: 340px; min-height: 320px; max-height: 420px; width: 100%;">
+
+                <p class="text-secondary mb-3 mb-md-4 fs-6 fs-md-5">
+                    Frontend Mentor transformed me from a newbie to a
+                    professional developer, enabling me to create flawless,
+                    responsive, accessible websites. It's a superb platform
+                    for feedback with a supportive community backing your
+                    growth. Through it, I evolved from a frontend to a
+                    full-stack developer.
+                </p>
+
+                <div class="d-flex align-items-center gap-3 mt-auto">
+                    <img src="https://i.pravatar.cc/100?img=5" alt="Hikmah" class="rounded-circle"
+                        style="width: 40px; height: 40px;">
+                    <div>
+                        <h6 class="fw-bold mb-0 blue-color fs-6 fs-md-5">
+                            Hikmah
+                        </h6>
+                        <small class="text-muted">@Hikmahx</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="card border-0 shadow-sm p-3 p-md-4 rounded-4 flex-shrink-0 d-flex flex-column"
+                style="min-width: 300px; max-width: 340px; min-height: 320px; max-height: 420px; width: 100%;">
+
+                <p class="text-secondary mb-3 mb-md-4 fs-6 fs-md-5">
+                    Frontend Mentor has helped tremendously. Working on the
+                    newbie challenges really helped me get better at building
+                    layouts. Also, it increased my JavaScript skills. Working
+                    with APIs, DOM manipulation, and so on greatly increased
+                    my knowledge. Would totally recommend it.
+                </p>
+
+                <div class="d-flex align-items-center gap-3 mt-auto">
+                    <img src="https://i.pravatar.cc/100?img=33" alt="Sarah" class="rounded-circle"
+                        style="width: 40px; height: 40px;">
+                    <div>
+                        <h6 class="fw-bold mb-0 blue-color fs-6 fs-md-5">
+                            Nuel
+                        </h6>
+                        <small class="text-muted">@ijklmopffs</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="card border-0 shadow-sm p-3 p-md-4 rounded-4 flex-shrink-0 d-flex flex-column"
+                style="min-width: 300px; max-width: 340px; min-height: 320px; max-height: 420px; width: 100%;">
+
+                <p class="text-secondary mb-3 mb-md-4 fs-6 fs-md-5">
+                    After completing a software bootcamp, Frontend Mentor
+                    let me build real-world projects, strengthening my
+                    developer skills. I wouldn't be where I am today without it.
+                </p>
+
+                <div class="d-flex align-items-center gap-3 mt-auto">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtPSUtFb-fIo-DjxdYGG2H3ihNSdOcZDiasZ4aGrOLsA&s=10"
+                        alt="Sarah" class="rounded-circle" style="width: 40px; height: 40px;">
+                    <div>
+                        <h6 class="fw-bold mb-0 blue-color fs-6 fs-md-5">
+                            Michelle
+                        </h6>
+                        <small class="text-muted">@maberizk</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 6 -->
+            <div class="card border-0 shadow-sm p-3 p-md-4 rounded-4 flex-shrink-0 d-flex flex-column"
+                style="min-width: 300px; max-width: 340px; min-height: 320px; max-height: 420px; width: 100%;">
+
+                <p class="text-secondary mb-3 mb-md-4 fs-6 fs-md-5">
+                    As a backend developer, I sought to improve my frontend
+                    skills. Frontend Mentor provided beautifully designed
+                    challenges, allowing me to progress from simple components
+                    to advanced responsive web pages. Enough can't be said
+                    about the community members. Their feedback has been
+                    invaluable in my journey to becoming a better developer.
+                </p>
+
+                <div class="d-flex align-items-center gap-3 mt-auto">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9_1OzQ2ggGKSJQx4_A56QRNGZzmXo7LpY-2Nto75eZA&s=10"
+                        alt="Sarah" class="rounded-circle" style="width: 40px; height: 40px;">
+                    <div>
+                        <h6 class="fw-bold mb-0 blue-color fs-6 fs-md-5">
+                            Arturo
+                        </h6>
+                        <small class="text-muted">@artimys</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 7 -->
+            <div class="card border-0 shadow-sm p-3 p-md-4 rounded-4 flex-shrink-0 d-flex flex-column"
+                style="min-width: 300px; max-width: 340px; min-height: 320px; max-height: 420px; width: 100%;">
+
+                <p class="text-secondary mb-3 mb-md-4 fs-6 fs-md-5">
+                    Frontend Mentor offers invaluable real-world web
+                    development challenges, sharpening my HTML, CSS, and
+                    JavaScript skills. The structured feedback, solutions,
+                    and vibrant community have significantly impacted my
+                    learning and growth. It's both a skill-building platform
+                    and a community hub for web developers.
+                </p>
+
+                <div class="d-flex align-items-center gap-3 mt-auto">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3nQay38Bc2R4LFFRhyesH0zqx95jwKamijuX77fZFXA&s=10"
+                        alt="Sarah" class="rounded-circle" style="width: 40px; height: 40px;">
+                    <div>
+                        <h6 class="fw-bold mb-0 blue-color fs-6 fs-md-5">
+                            Shashikant
+                        </h6>
+                        <small class="text-muted">@shashikantdev3</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 8 -->
+            <div class="card border-0 shadow-sm p-3 p-md-4 rounded-4 flex-shrink-0 d-flex flex-column"
+                style="min-width: 300px; max-width: 340px; min-height: 320px; max-height: 420px; width: 100%;">
+
+                <p class="text-secondary mb-3 mb-md-4 fs-6 fs-md-5">
+                    I began my frontend journey with Frontend Mentor's
+                    newbie challenges and progressed to more complex
+                    projects. Some of the complex ones are now even in
+                    my portfolio! The supportive community and the dedication
+                    of the Frontend Mentor team are unmatched. I highly
+                    recommend it for newcomers and those keen on improving
+                    their skills.
+                </p>
+
+                <div class="d-flex align-items-center gap-3 mt-auto">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdKZ7ppUWjDwVo7SA0YHXTVTR7M1157yhcOg0czbudEw&s=10"
+                        alt="Sarah" class="rounded-circle" style="width: 40px; height: 40px;">
+                    <div>
+                        <h6 class="fw-bold mb-0 blue-color fs-6 fs-md-5">
+                            Marit
+                        </h6>
+                        <small class="text-muted">@Maritxx</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JOIN COMMUNITY -->
+
+    <div class="container d-flex justify-content-center p-2 p-sm-3 p-md-4 p-lg-5">
+
+        <div class="card rounded-4 p-3 p-sm-4 p-md-5 p-lg-5 text-center bg-gray" style="width: 100%; max-width: 100%;">
+
+            <div class="card-body p-2 p-sm-3 p-md-4">
+
+                <h1 class="pb-3 pb-md-4 display-5 display-md-4 display-lg-3 fw-semibold">
+                    Join 1,193,061 people building <br class="d-none d-sm-block">
+                    portfolio-worthy projects
+                </h1>
+
+                <p class="fs-p text-secondary pb-3 pb-md-4">
+                    Our highly supportive, positive community is here to help
+                    you improve your skills. <br class="d-none d-md-block">
+                    We all try to help each other out wherever possible.
+                    We'd love to welcome you to <br class="d-none d-md-block">
+                    our community!
+                </p>
+
+                <button type="button" class="btn btn-danger px-4 px-sm-5 py-2 py-sm-3 rounded-5 
+                                       fs-6 fs-md-5">
+
+                    <a href="https://github.com/" class="text-decoration-none text-white">
+
+                        <b><i>LOG IN WITH GITHUB</i></b>
+
+                    </a>
+
+                    <i class="fa-brands fa-github ms-2"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- FOOTER -->
+
+    <footer class="pt-5 pb-1 px-5 bg-white">
+
+        <div class="row p-3 pb-5">
+
+            <div class="d-flex align-items-center pb-4">
+
+                <a class="text-decoration-none" href="#">
+
+                    <img src="https://www.frontendmentor.io/images/logo-desktop.svg" alt="">
+
+                </a>
+
+
+                <div class="ms-auto d-flex gap-3">
+
+                    <i class="fa-brands fa-discord fs-3 i-color"></i>
+
+                    <i class="fa-brands fa-x-twitter fs-3 i-color"></i>
+
+                    <i class="fa-brands fa-linkedin fs-3 i-color"></i>
+
+                    <i class="fa-brands fa-facebook fs-3 i-color"></i>
+
+                </div>
+
+            </div>
+
+
+            <!-- FRONTEND MENTOR -->
+
+            <div class="col-md-4 col-lg-4">
+
+                <h4 class="blue-color pt-5 pb-1">
+                    Stay up to date
+                </h4>
+
+                <p class="pe-5 fs-p">
+
+                    with new challenges, featured solutions,
+                    selected articles, and our latest news
+
+                </p>
+
+
+                <div class="d-flex align-items-center">
+
+                    <input type="email" placeholder="email@example.com" class="p-2 rounded-2 me-4">
+
+                    <button type="button" class="btn btn-danger px-5 py-2 fw-semibold rounded-5">
+
+                        SUBSCRIBE
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- FRONTEND MENTOR LINKS -->
+
+            <div class="col-sm-6 col-md-2 col-lg-2 d-flex flex-column pt-4">
+
+                <h6 class="fw-bold fs-h pb-3">
+                    FRONTEND MENTOR
+                </h6>
+
+                <a href="" class="text-decoration-none text-secondary fs-p">
+                    Unlock Pro
+                </a>
+
+                <a href="" class="text-decoration-none text-secondary fs-p">
+                    Contact us
+                </a>
+
+                <a href="" class="text-decoration-none text-secondary fs-p">
+                    FAQs
+                </a>
+
+                <a href="" class="text-decoration-none text-secondary fs-p">
+                    Become a partner
+                </a>
+
+                <a href="" class="text-decoration-none text-secondary fs-p">
+                    Use cases
+                </a>
+
+            </div>
+
+
+            <!-- EXPLORE -->
+
+            <div class="col-sm-6 col-md-2 col-lg-2 d-flex flex-column pt-4">
+
+                <h6 class="fw-bold fs-h pb-3">
+                    EXPLORE
+                </h6>
+
+                <a href="" class="text-decoration-none text-secondary fs-p">
+                    Learning paths
+                </a>
+
+                <a href="" class="text-decoration-none text-secondary fs-p">
+                    Challenges
+                </a>
+
+                <a href="" class="text-decoration-none text-secondary fs-p">
+                    Solutions
+                </a>
+
+                <a href="" class="text-decoration-none text-secondary fs-p">
+                    Articles
+                </a>
+
+                <a href="" class="text-decoration-none text-secondary fs-p">
+                    Guides
+                </a>
+
+            </div>
+
+
+            <!-- COMMUNITY -->
+
+            <div class="col-sm-6 col-md-2 col-lg-2 d-flex flex-column pt-4">
+
+                <h6 class="fw-bold fs-h pb-3">
+                    COMMUNITY
+                </h6>
+
+                <a href="" class="text-decoration-none text-secondary fs-p">
+                    Discord
+                </a>
+
+                <a href="" class="text-decoration-none text-secondary fs-p">
+                    Guidelines
+                </a>
+
+            </div>
+
+
+            <!-- COMPANIES -->
+
+            <div class="col-sm-6 col-md-2 col-lg-2 d-flex flex-column pt-4">
+
+                <h6 class="fw-bold fs-h pb-3">
+                    FOR COMPANIES
+                </h6>
+
+                <a href="" class="text-decoration-none text-secondary fs-p">
+                    Hire developers
+                </a>
+
+                <a href="" class="text-decoration-none text-secondary fs-p">
+                    Train developers
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <hr>
+
+
+        <div class="d-flex">
+
+            <p>
+                <i class="fa-regular fa-copyright"></i>
+                Frontend Mentor 2019 - 2026
+            </p>
+
+
+            <div class="d-flex ms-auto">
+
+                <p class="me-4">
+                    Terms
+                </p>
+
+                <p class="me-4">
+                    Cookie Policy
+                </p>
+
+                <p class="me-4">
+                    Privacy Policy
+                </p>
+
+                <p>
+                    License
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        // SWITCH BETWEEN INDIVIDUALS AND TEAMS
+
+        function showTab(tab) {
+
+            const indTab =
+                document.getElementById('individuals-tab');
+
+            const teamsTab =
+                document.getElementById('teams-tab');
+
+            const btnInd =
+                document.getElementById('btn-individuals');
+
+            const btnTeams =
+                document.getElementById('btn-teams');
+
+
+            if (tab === 'individuals') {
+
+                indTab.classList.remove('d-none');
+
+                teamsTab.classList.add('d-none');
+
+
+                btnInd.className =
+                    "btn btn-custom-primary rounded-pill px-4 py-2 fw-bold text-uppercase fst-italic";
+
+                btnTeams.className =
+                    "btn btn-light text-dark rounded-pill px-4 py-2 fw-bold text-uppercase fst-italic border-0";
+
+            }
+
+            else {
+
+                teamsTab.classList.remove('d-none');
+
+                indTab.classList.add('d-none');
+
+
+                btnTeams.className =
+                    "btn btn-custom-primary rounded-pill px-4 py-2 fw-bold text-uppercase fst-italic";
+
+                btnInd.className =
+                    "btn btn-light text-dark rounded-pill px-4 py-2 fw-bold text-uppercase fst-italic border-0";
+
+            }
+
+        }
+
+
+        // TESTIMONIAL CAROUSEL
+
+        const container =
+            document.getElementById('carouselContainer');
+
+        const prevBtn =
+            document.getElementById('prevBtn');
+
+        const nextBtn =
+            document.getElementById('nextBtn');
+
+
+        // Calculate card width + gap
+
+        const getScrollAmount = () => {
+
+            const card =
+                container.querySelector('.card');
+
+            return card.offsetWidth + 24;
+
+        };
+
+
+        nextBtn.addEventListener('click', () => {
+
+            container.scrollBy({
+                left: getScrollAmount(),
+                behavior: 'smooth'
+            });
+
+        });
+
+
+        prevBtn.addEventListener('click', () => {
+
+            container.scrollBy({
+                left: -getScrollAmount(),
+                behavior: 'smooth'
+            });
+
+        });
+
+
+        // CHANGE IMAGE WHEN ACCORDION IS SELECTED
+
+        const accordionButtons =
+            document.querySelectorAll(
+                '#howItWorks .accordion-button'
+            );
+
+        const howImage =
+            document.getElementById('howImage');
+
+
+        accordionButtons.forEach(button => {
+
+            button.addEventListener('click', function () {
+
+                howImage.src =
+                    this.getAttribute('data-image');
+
+            });
+
+        });
+
+    </script>
+
+
+    <!-- BOOTSTRAP JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>
